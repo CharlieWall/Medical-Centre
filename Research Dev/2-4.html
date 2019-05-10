@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				padding: 50px 50px;
+			}
+
+			.center {
+				text-align: center;
+			}
+
+			.right {
+				text-align: right;
+			}
+
+			.top {
+				vertical-align: top;
+			}
+
+			.bottom {
+				vertical-align: bottom;
+			}
+
+			.middle {
+				vertical-align: middle;
+			}
+
+			.italic {
+				font-style: italic;
+			}
+
+			.bold {
+				font-weight: bold;
+			}
+
+			.form {
+				font-size: 13px;
+			}
+
+			.form td {
+				padding: 2px 4px;
+			}
+
+			.back-table td {
+				padding: 5px 4px;
+			}
+
+			table {
+				margin: 2px 0;
+			}
+
+			.input {
+				background-color: white;
+				border: 1px solid black;
+				vertical-align: text-bottom;
+			}
+
+			.inline {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.input.onecell {
+				width: 12px;
+				height: 10px;
+				margin: 0 2px;
+				display: inline-block;
+			}
+
+			.description {
+				font-size: 12px;
+				font-weight: normal;
+			}
+
+			.checkbox {
+				cursor: pointer;
+			}
+
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+			}
+
+			input[type="number"] {
+				-moz-appearance: textfield;
+			}
+
+			.uinput {
+				vertical-align: top;
+			}
+			[contenteditable='true'] {
+				border: 100px;
+				padding: 5px;
+			}
+			
+		</style>
+	</head>
+	<body>
+	
+				</body>
+		<div class="header">
+			<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="top bold" style="width: 25%; font-size: 13px;">
+						<div>
+							<div>EDI: AUTWELLE</div>
+							<div>Dr D. Hay</div>
+							<div>NZMC Number: 12962</div>
+						</div>
+					</td>
+					<td class="center bold" style="width: 50%;">
+						<div style="font-size: 17px;">STUDENT MEDICAL CENTRE</div>
+						<div>City Campus - AUT University</div>
+						<div>Private Bag 92006, Auckland 1142</div>
+						<div>Phone: (09) 921 9992 Fax: (09) 921 9760</div>
+					</td>
+					<td class="right top" style="width: 25%;"><img src="logo.jpg" width="110"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="bold" style="font-size: 20px; margin: 50px 0;">PRACTICE ENROLMENT FORM</div>
+
+	<form action="2-4.php" method="post">
+		<div class="form">
+			<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td rowspan="2" class="bold" width="15%">Legal name<input  type="text" name="legalname"></td>
+					<td rowspan="2" class="bold" width="15%">Title:<input  type="text" name="title"><br>Mr/Mrs/Ms/Miss</td>
+					<td class="bold" width="30%">Surname: <span class="description"></span><input
+							type="text" name="surname"></td>
+					<td class="bold" width="13%">First name:</td>
+					<td><input  type="text" name="firstname">
+						<div class="uinput inline" name="surname" ></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="uinput inline" ></div>
+					</td>
+					<td class="bold">Middle name:</td>
+					<td><input  type="text" name="middlename">
+						<div class="uinput inline" ></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Marital status</td>
+					<td colspan="4">
+						<input class="input onecell checkbox checkbox-group-1" name="marita[]" readonly>
+						<div class="inline">Single　　</div>
+						<input class="input onecell checkbox checkbox-group-1" name="marita[]" readonly>
+						<div class="inline">Married　　</div>
+						<input class="input onecell checkbox checkbox-group-1" name="marita[]" readonly>
+						<div class="inline">Divorced　　</div>
+						<input class="input onecell checkbox checkbox-group-1" name="marita[]" readonly>
+						<div class="inline">Windowed　　</div>
+						<input class="input onecell checkbox checkbox-group-1" name="marita[]" readonly>
+						<div class="inline">Separated</div>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" rowspan="2" class="top bold" width="64%">NHI: <span class="description">(office use only)<input  type="text" name="nhi"></span>
+						<div>
+							<div class="uinput inline"></div>
+						</div>
+					</td>
+					<td rowspan="2" class="top bold" width="12%">Date of birth:</td>
+					<td class="center bold">Day</td>
+					<td class="center bold">Month</td>
+					<td class="center bold">Year</td>
+				</tr>
+				<tr>
+					<td><input  type="text" name="day">
+						<div class="uinput inline"></div>
+					</td>
+					<td><input  type="text" name="month">
+						<div class="uinput inline"></div>
+					</td>
+					<td><input  type="text" name="year">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="inline bold">Gender: </div>
+						<input class="input onecell checkbox checkbox-group-2" name="gender[]" readonly>
+						<div class="inline bold">Male　　</div>
+						<input class="input onecell checkbox checkbox-group-2" name="gender[]" readonly>
+						<div class="inline bold">Female　　</div>
+						<input class="input onecell checkbox checkbox-group-2" name="gender[]" readonly>
+						<div class="inline bold">Gender Diverse</div>
+						<span class="description">(please state)</span><input  type="text" name="genderstate">
+						<div class="uinput inline"></div>
+					</td>
+					<td colspan="4" class="bold">Place of birth:<input  type="text" name="placebirth">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="bold">Occupation:<input  type="text" name="occupation">
+						<div class="uinput inline"></div>
+					</td>
+					<td colspan="4" class="bold">Country of birth:<input  type="text" name="countrybirth">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold" width="32%">Student ID number:<input  type="text" name="studentid">
+						<div class="uinput inline"></div>
+					</td>
+					<td width="32%">
+						<div class="bold inline">Current student</div>
+						<input class="input onecell checkbox checkbox-group-3" name="currentstudent[]" readonly>
+						<div class="inline">Yes　　</div>
+						<input class="input onecell checkbox checkbox-group-3" name="currentstudent[]" readonly>
+						<div class="inline">No</div>
+					</td>
+					<td colspan="4">
+						<div class="bold inline">Current staff member</div>
+						<input class="input onecell checkbox checkbox-group-4" name="currentstaff[]" readonly>
+						<div class="inline">Yes　　</div>
+						<input class="input onecell checkbox checkbox-group-4" name="currentstaff[]" readonly>
+						<div class="inline">No</div>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="100%" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td rowspan="2" class="bold" width="31%">Residential address</td>
+					<td class="bold" width="22%">Street number:<input  type="text" name="streetnumber">
+						<div class="uinput inline"></div>
+					</td>
+					<td colspan="3" class="bold">Street name:<input  type="text" name="streetname">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Suburb:<input  type="text" name="suburb">
+						<div class="uinput inline"></div>
+					</td>
+					<td class="bold" width="18%">City:<input  type="text" name="city">
+						<div class="uinput inline"></div>
+					</td>
+					<td class="bold" colspan="2">Postcode:<input  type="text" name="postcode">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Postal address <div class="description">(if different from above)</div>
+					</td>
+					<td colspan="4" class="bold">Postal address:<input type="text" name="postaladdress">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Home phone:<input  type="text" name="homephone">
+						<div class="uinput inline"></div>
+					</td>
+					<td class="bold">Work:<input  type="text" name="work">
+						<div class="uinput inline"></div>
+					</td>
+					<td colspan="3" class="bold">Mobile:<input  type="text" name="mobile">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Email:<input  type="text" name="email"></td>
+					<td colspan="4">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Do you agree to receive emails?</td>
+					<td>
+						<input class="input onecell checkbox checkbox-group-5" name="receiveemails[]" readonly>
+						<div class="inline">Yes　</div>
+						<input class="input onecell checkbox checkbox-group-5" name="receiveemails[]" readonly>
+						<div class="inline">No</div>
+					</td>
+					<td class="bold" colspan="2" width="33%">Do you agree to receive text messages?</td>
+					<td>
+						<input class="input onecell checkbox checkbox-group-6" name="textmessage[]" readonly>
+						<div class="inline">Yes　</div>
+						<input class="input onecell checkbox checkbox-group-6" name="textmessage[]" readonly>
+						<div class="inline">No</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">I wish to sign up to the patient portal</td>
+					<td>
+						<input class="input onecell checkbox checkbox-group-7" name="patientportal[]"readonly>
+						<div class="inline">Yes　</div>
+						<input class="input onecell checkbox checkbox-group-7" name="patientportal[]"readonly>
+						<div class="inline">No</div>
+					</td>
+					<td class="bold" colspan="2">Photo ID sighted</td>
+					<td>
+						<input class="input onecell checkbox checkbox-group-99" name="photoid[]" readonly>
+						<div class="inline">Yes &nbsp &nbsp</div>
+						<input class="input onecell checkbox checkbox-group-99" name="photoid[]" readonly>
+						<div class="inline">No</div>
+
+
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Do you smoke?</td>
+					<td colspan="4">
+						<input class="input onecell checkbox checkbox-group-8" name="smoke[]" readonly>
+						<div class="inline">Yes　　</div>
+						<input class="input onecell checkbox checkbox-group-8" name="smoke[]" readonly>
+						<div class="inline">No (ex smoker)　　</div>
+						<input class="input onecell checkbox checkbox-group-8" name="smoke[]" readonly>
+						<div class="inline">Never</div>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="50%" style="padding: 0 4px 0 0;">
+						<table width="100%" border="1" cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="center bold">Community Services Card</td>
+							</tr>
+							<tr>
+								<td class="center">
+									<input class="input onecell checkbox checkbox-group-9" name="communitycard[]" readonly>
+									<div class="inline">Yes　　</div>
+									<input class="input onecell checkbox checkbox-group-9" name="communitycard[]" readonly>
+									<div class="inline">No</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="inline bold">Card number:</div>
+									<input type="number" min="0" max="9" name="cardnumber1" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber2" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber3" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber4" class="input onecell">　
+									<input type="number" min="0" max="9" name="cardnumber5" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber6" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber7" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber8" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber9" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber10" class="input onecell">
+									<input type="number" min="0" max="9" name="cardnumber11" class="input onecell">
+								</td>
+							</tr>
+							<tr>
+								<td class="bold">Card expiry date:
+									<input type="text" name="cardexpiry">
+									<div class="uinput inline"></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td style="padding: 0 0 0 4px;">
+						<table width="100%" border="1" cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="center bold">High User Health Card</td>
+							</tr>
+							<tr>
+								<td class="center">
+									<input class="input onecell checkbox checkbox-group-10" name="highuser[]"readonly>
+									<div class="inline">Yes　　</div>
+									<input class="input onecell checkbox checkbox-group-10" name="highuser[]"readonly>
+									<div class="inline">No</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="bold">Card number:<input  type="text" name="cartnumber">
+									<div class="uinput inline"></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="bold">Card expiry date:<input  type="text" name="cartexpire">
+									<div class="uinput inline"></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="50%" style="padding: 0 4px 0 0;">
+						<table width="100%" border="1" cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="bold" style="padding: 8px 28px;">Which ethnic group(s) do you belong to? <br>Tick the space or
+									spaces
+									which apply to you</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">New Zealand European <input class="input onecell checkbox" readonly name="groups[]" style="float: right; margin-top: 2px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Maori<input class="input onecell checkbox" readonly name="groups[]" style="float: right; margin-top: 2px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Samoan<input class="input onecell checkbox" readonly name="groups[]" style="float: right; margin-top: 2px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Cook Island Maori<input class="input onecell checkbox" readonly name="groups[]" style="float: right; margin-top: 2px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Tongan<input class="input onecell checkbox" readonly name="groups[]" style="float: right; margin-top: 2px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Niuean<input class="input onecell checkbox" readonly name="groups[]" style="float: right; margin-top: 2px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Chinese<input class="input onecell checkbox" readonly name="groups[]" style="float: right; margin-top: 2px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Indian<input class="input onecell checkbox" readonly name="groups[]" style="float: right; margin-top: 2px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Other such as (Dutch, Japanese, Tokelauan)</td>
+							</tr>
+							<tr>
+								<td style="padding: 2px 28px;">Please state:<input  type="text" name="pleasestate">
+									<div class="uinput inline"></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td style="padding: 0 0 0 4px;">
+						<table width="100%" border="1" cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="center bold">Transfer of records</td>
+							</tr>
+							<tr>
+								<td>
+									In order to get the best care possible, <b>I agree</b> to this practice obtaining my records from my previous
+									doctor. <b>I also understand</b> that I will be removed from their practice register.
+									<div style="padding: 4px;">
+										<input class="input onecell checkbox checkbox-group-11" name="iagree[]" readonly>
+										<div class="inline">Yes</div>
+										<input class="input onecell checkbox checkbox-group-11" name="iagree[]" readonly>
+										<div class="inline">No</div>
+										<input class="input onecell checkbox checkbox-group-11" name="iagree[]" readonly>
+										<div class="inline">Not applicable</div>
+									</div>
+									<div class="bold" style="padding: 17px 0;">
+										<div style="border-bottom: 1px solid black;"><span style="border-bottom: 1px solid white;">Previous
+												doctor's
+												name:<input  type="text" name="previousname"></span>
+											<div class="uinput inline"></div>
+										</div>
+										<div style="border-bottom: 1px solid black;"><span style="border-bottom: 1px solid white;">Medical centre:<input  type="text" name="medicalcentre"></span>
+											<div class="uinput inline"></div>
+										</div>
+										<div style="border-bottom: 1px solid black;"><span style="border-bottom: 1px solid white;">Address:<input  type="text" name="address"></span>
+											<div class="uinput inline"></div>
+										</div>
+										<div style="border-bottom: 1px solid black;">
+											<div class="uinput inline"></div>
+										</div>
+										<div style="border-bottom: 1px solid black;"><span style="border-bottom: 1px solid white;">Fax number:<input  type="text" name="faxnumber"></span>
+											<div class="uinput inline"></div>
+										</div>
+										<br>
+										<div style="border-bottom: 1px solid black;"><span style="border-bottom: 1px solid white;">Signature<input  type="text" name="signature"></span>
+											<div class="uinput inline"></div>
+										</div>
+										<div class="description">(agreement for transfer of records)</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="100%" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td rowspan="4" class="bold" width="14%">Next of kin/ <br>emergency <br>contact details</td>
+					<td rowspan="2" class="bold" width="16%">Title: <input  type="text" name="title2"><br>Mr/Mrs/Ms/Miss</td>
+					<td class="bold" width="28%">Surname: <span class="description"><input  type="text" name="surname2"></span></td>
+					<td class="bold" width="20%">First name:</td>
+					<td><input  type="text" name="firstname2">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="uinput inline"></div>
+					</td>
+					<td class="bold">Relationship to patient:</td>
+					<td><input  type="text" name="relationship">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Address:</td>
+					<td colspan="3"><input  type="text" name="address2">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Phone:</td>
+					<td><input  type="text" name="phone2">
+						<div class="uinput inline"></div>
+					</td>
+					<td class="bold">Mobile:</td>
+					<td><input  type="text" name="mobile2">
+						<div class="uinput inline"></div>
+					</td>
+				</tr>
+			</table>
+			<div class="right description" style="margin: 12px 0;">Please turn over</div>
+			<br>
+			<table width="100%" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="center bold" style="padding: 4px; font-size: 17px;">My declaration of entitlement and eligibility</td>
+				</tr>
+			</table>
+			<table class="back-table" width="100%" style="margin-top: 12px;" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="bold">I am entitled to enrol because I am residing permanently in New Zealand <div class="description italic">The
+							definition of residing permanently in NZ is that you intend to be a resident in New Zealand for at least 183
+							days in the next 12 months</div>
+					</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox" name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">I am a current student at AUT</td>
+					<td class="center">
+						<input class="input onecell checkbox" name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">I am a staff member at AUT</td>
+					<td class="center">
+						<input class="input onecell checkbox" name="declaration[]" readonly>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<div class="bold">I am eligible to enrol because:</div>
+			<table width="100%" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="center" width="4%">A</td>
+					<td>I am a New Zealand citizen <div class="description italic">(If yes, tick box and proceed to I confirm that, If
+							requested, I can provided proof of my eligibility below)</div>
+					</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox" name="declaration[]" readonly>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<div>If you are <span class="bold">not a New Zealand citizen</span>, please tick which eligibility criteria applies
+				to you (B-J) below:</div>
+			<table class="back-table" width="100%" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="center" width="4%">B</td>
+					<td>I hold a resident visa or a permanent resident visa (or a residence permit if issued before December 2010)</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="center" width="4%">C</td>
+					<td>I am an Australian citizen or Australian permanent residence <span class="bold">AND</span> able to show I have
+						been in New Zealand or intend to stay in New Zealang for at least 2 consecutive years</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="center" width="4%">D</td>
+					<td>I have a work visa/permit and can show that I am able to be in New Zealand for at least 2 years (previous
+						oermits included)</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="center" width="4%">E</td>
+					<td>I am an interim visa holder who was eligible immediately before my interim visa started</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="center" width="4%">F</td>
+					<td>I am a refugee or protected person <span class="bold">OR</span> in the process of applying for, or appealing
+						refugee or protection status, <span class="bold">OR</span> a victim or suspected victim of people trafficking</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="center" width="4%">G</td>
+					<td>I am under 18 years and in the care and control of a parent/legal guardian/adopting parent who meets one
+						criterion in clauses A-F above <span class="bold">OR</span> in the control of the Chief Executive of the Ministry
+						of Social Development</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="center" width="4%">H</td>
+					<td>I am a NZ Aid Programme student studying in NZ and receiving Official Development Assistance funding (or their
+						partner or child under 18 years old)</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="center" width="4%">I</td>
+					<td>I am participating in the Ministry of Education Foreign Language Teaching Assistantship scheme</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="center" width="4%">J</td>
+					<td>I am a Commonwealth Scholarship holder studying in NZ and receiving funding from a New Zealand university
+						under the Commonwealth Scholarship and Fellowship fund</td>
+					<td class="center" width="6%">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<br>
+			<table class="back-table" width="100%" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td><span class="bold">I confirm</span> that, if requested, I can provide proof of my eligibility</td>
+					<td class="center">
+						<input class="input onecell checkbox"  name="declaration[]" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="description"><span class="italic">We will retain a copy for eligibility purposes only</span><span style="float: right;">Evidence
+							sighted (office use only)</span></td>
+					<td class="center">
+						<input class="input onecell checkbox" name="declaration[]"  readonly>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<table width="100%" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="center bold" style="padding: 4px; font-size: 17px;">My agreement to the enrolment process</td>
+				</tr>
+			</table>
+			<table class="back-table" width="100%" style="margin-top: 12px;" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="center" width="4%">
+						<input class="input onecell checkbox"  name="agreenment[]" readonly>
+					</td>
+					<td><span class="bold">I intend to use this practice</span> as my regular and ongoing provider of general
+						practice/GP/health care services</td>
+				</tr>
+				<tr>
+					<td class="center">
+						<input class="input onecell checkbox"  name="agreenment[]"  readonly>
+					</td>
+					<td><span class="bold">I understand</span> that by enrolling with this practice I will be included in the enrolled
+						population of Auckland Primary Health Organisation, and my name, address and other identification details will be
+						included on the Practice, PHO and National Enrolment Service Registers.</td>
+				</tr>
+				<tr>
+					<td class="center">
+						<input class="input onecell checkbox"  name="agreenment[]"  readonly>
+					</td>
+					<td><span class="bold">I understand</span> that if I visit another health care provider where I am not enrolled I
+						may be charged a higher fee.</td>
+				</tr>
+				<tr>
+					<td class="center">
+						<input class="input onecell checkbox"  name="agreenment[]"  readonly>
+					</td>
+					<td><span class="bold">I have been given information</span> about the benefits and implications of enrolment and
+						the services this practice and PHO provides along with the PHO's name and contact details.</td>
+				</tr>
+				<tr>
+					<td class="center">
+						<input class="input onecell checkbox"  name="agreenment[]"  readonly>
+					</td>
+					<td><span class="bold">I have read and I agree</span> with the use of the Health Information Privacy Statement.
+						The information I have provided on the enrolment form will be used to determine eligibility to receive
+						publicly-funded services. Information may be compared with other government agencies, but only when permitted
+						under the Privacy Act.</td>
+				</tr>
+				<tr>
+					<td class="center">
+						<input class="input onecell checkbox"  name="agreenment[]"  readonly>
+					</td>
+					<td><span class="bold">I understand</span> that the practice participates in a national surver about people's
+						health care experience and how their overall care is managed. Taking part is voluntary and all responses will be
+						anonymous. I can decline to complete the survey. The survey provides important information that is used to
+						improve health services.</td>
+				</tr>
+				<tr>
+					<td class="center">
+						<input class="input onecell checkbox"  name="agreenment[]"  readonly>
+					</td>
+					<td><span class="bold">I agree</span> to inform the practice of any changes in my contact details and entitlement
+						and/or eligibility to be enrolled.</td>
+				</tr>
+			</table>
+			<table width="100%" style="margin-top: 12px;" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="bold" style="height: 50px;">Signatory details</td>
+					<td>Signature <div class="inline" style="width: 350px; border-bottom: 1px solid black; vertical-align: text-bottom">
+						<input type="text"   name="signature2" >
+							<div class="uinput inline" ></div>
+						</div>
+					</td>
+					<td>Date <div class="inline" style="width: 100px; border-bottom: 1px solid black; vertical-align: text-bottom">
+							<div class="uinput inline" ></div><input type="text"   name="date2" >
+						</div>
+					</td>
+				</tr>
+				
+				</form>
+				
+			</table>
+		</div>
+		
+			<span style="display:block; width:1530px; text-align:center"><input type="submit" value="Submit">
+			</span>			
+	
+		<script>
+			var checkboxs = document.getElementsByClassName('checkbox');
+			for (var i in checkboxs) {
+				checkboxs[i].onclick = function() {
+					if (this.value == '✔') {
+						this.value = '';
+					} else {
+						this.value = '✔';
+					}
+				}
+			}
+			for (var i = 0; i < 1000; i++) {
+				var checkboxs = document.getElementsByClassName('checkbox-group-' + i);
+				for (var j in checkboxs) {
+					checkboxs[j].sameGroupCheckBoxes = checkboxs;
+					checkboxs[j].onclick = function() {
+						var sameGroupCheckBoxes = this.sameGroupCheckBoxes;
+						for (var k in sameGroupCheckBoxes) {
+							if (sameGroupCheckBoxes[k] != this) {
+								sameGroupCheckBoxes[k].value = '';
+							}
+						}
+						if (this.value == '✔') {
+							this.value = '';
+						} else {
+							this.value = '✔';
+						}
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

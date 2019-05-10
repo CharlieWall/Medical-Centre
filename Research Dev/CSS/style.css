@@ -1,0 +1,211 @@
+body{
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding:0;
+	margin: 0;
+	background-color: #21BBEF;
+	}
+
+	/* Global */
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	}
+
+
+header ul{
+	float:left;
+	position: absolute; left: 500px;
+	margin-top: 12px;
+	padding: 0;
+}
+
+header nav{
+	margin-top: 60px;
+	background-color: #0080C9;
+	width:100%;
+	height:50px;
+}
+
+header a{
+	margin-top: 10px;
+	color:#ffffff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+	
+}
+
+header #branding{
+	float:left;
+}
+
+header #medicalLogo{
+	position:absolute; 
+	top: 0px;
+	left: 300px;
+	float: left;
+	z-index: 2;
+
+}
+
+header #logo{
+	position: absolute; 
+	top:0px;
+	right:300px;
+	float:right;
+	z-index: 2;
+}
+
+header #headerBanner img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 60px;
+	width: 100%;
+	z-index: 1;
+}
+
+
+header #branding h1{
+	font-family: Arial;
+	position: absolute;
+}
+
+/* Showcase */
+#showcase{
+	width: 1400px;
+	margin: auto;
+	min-height: 450px;
+	background:url('../img/form.jpg');
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase h1{
+	margin-top:90px;
+	text-align: center;
+	font-size: 55px;
+	margin-bottom: 5px;
+}
+
+#showcase p{
+	font-size: 20px;
+}
+
+#showcase button[name="domestic"]{
+	margin-top: 60px;
+	background-color: #0080C9;/* Blue */
+	opacity: 0.9;
+	border: none;
+	color: white;
+	padding: 40px 57px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#showcase button[name="domestic"]:hover{
+	background-color: #66B2DE; /* Blue */
+	border: none;
+	color: white;
+	padding: 40px 57px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#showcase button[name="international"]{
+	background-color: #C94900; /* Orange */
+	opacity: 0.9;
+	border: none;
+	color: white;
+	padding: 40px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#showcase button[name="international"]:hover{
+	background-color: #D36D32; /* Orange */
+	border: none;
+	color: white;
+	padding: 40px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.column{
+	position: relative;
+	left: 233px;
+	background-color: #ffffff;
+	float: left;
+	height: 420px;
+	width: 420px;
+	margin-top:25;
+	margin-left:43;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Inquiry Box */
+#inquiry{
+	position:relative;
+	margin:auto;
+	margin-top: 30px;
+	width: 100%;
+	padding: 0px;
+	color: #ffffff;
+	background: #015584;
+}
+
+#inquiry h1{
+	float: left;
+}
+
+#inquiry form{
+	float:right;
+	margin-top: 15px;
+}
+
+#inquiry input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px
+}
+
+footer{
+
+	background-color: #000000;
+	bottom: 0;
+}
+
+footer img{
+	width:100%;
+	position: relative;
+	bottom: 0;
+}
+
+
+
