@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>1-4</title>
+    <title>International student profile</title>
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <body>
@@ -48,5 +48,13 @@
         }
         ?>
 </table>
+
+
+<div align="center">
+<button onclick="window.location.href='index.html'" style="width:200px;height:60px;font-weight:bold;">Go back to home page</button>
+<button onclick="window.location.href='display.php'" style="width:200px;height:60px;font-weight:bold;">Refresh this page</button>
+</div>
+
+
 </body>
 </html>

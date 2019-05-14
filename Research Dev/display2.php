@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>2-4</title>
+    <title>Domestic student Profile</title>
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <body>
@@ -53,18 +53,18 @@
         <td>ID</td>
         <td>Postal address</td>
         <td>Groups</td>
-        <td>Kin’s title</td>
-        <td>Kin’s surname</td>
-        <td>Kin’s firstname</td>
-        <td>Kin’s address</td>
-        <td>kin’s phone</td>
-        <td>kin’s mobile phone</td>
-        <td>Relaionship of kin’s</td>
+        <td>Kin's title</td>
+        <td>Kin's surname</td>
+        <td>Kin's firstname</td>
+        <td>Kin's address</td>
+        <td>kin's phone</td>
+        <td>kin's mobile phone</td>
+        <td>Relaionship of kin's</td>
         <td>Registeration date</td>
     </tr>
     <?php
         header("Content-type:text/html;charset=utf-8");
-        $mysqli = mysqli_connect('127.0.0.1', 'root', 'root','html');
+        $mysqli = mysqli_connect('cmslamp14.aut.ac.nz', 'cfc0597', 'abc12345','cfc0597');
         $mysqli->set_charset('utf8');
         $sql = "select * from twofour";
         $data = mysqli_query($mysqli,$sql);
@@ -83,5 +83,11 @@
         }
     ?>
 </table>
+
+<div align="center">
+<button onclick="window.location.href='index.html'" style="width:200px;height:60px;font-weight:bold;">Go back to home page</button>
+<button onclick="window.location.href='display2.php'" style="width:200px;height:60px;font-weight:bold;">Refresh this page</button>
+</div>
+
 </body>
 </html>
