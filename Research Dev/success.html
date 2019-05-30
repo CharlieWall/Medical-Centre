@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	   
 	<title>Form Submitted</title>
+	
+
 	<style type="text/css">
 		.success {
 			position: fixed;
 			top: 30vh;
 			left: 20vw;
-			height: 180px;
+			height: 280px;
 			width: 60vw;
 			text-align: center;
 			font-size: 42px;
-			border: 3px solid green;
-			color: green;
+			border: 3px solid blue;
+			color: blue;
 			padding-top: 100px;
 		}
 
@@ -26,7 +29,28 @@
 
 </head>
 <body>
-<div class="success">Congratuations!<br> Your form has been submitted successfully!</div>
-<a class="home" href="index.html">Back to Home</a>
+			<div class="success"> <br> Your form has been submitted successfully!</br>
+		     	<form id="form1" runat="server">
+        		 <p>get back to home page in <span id='time'></span> seconds</p>
+			</form>
+<a class="home" href="index.html">Back to home page now</a>
 </body>
 </html>
+
+<script type="text/javascript">
+	//set countdown second
+	var t = 6;
+	//display the seconds remainning
+	function showTime(){
+    		t -= 1;
+    document.getElementById('time').innerHTML=t;
+    if(t==0){
+        location.href='index.html';
+		 
+    }
+    //each second run showTime()
+    setTimeout("showTime()",1000);
+}
+
+showTime();
+</script>
